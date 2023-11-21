@@ -5,8 +5,8 @@ namespace App;
 
 class Game
 {
-    protected $player1;
-    protected $player2;
+    public object $player1;
+    public object $player2;
     protected int $flips = 0;
     
     function __construct(Player $player1, Player $player2)
@@ -14,6 +14,7 @@ class Game
         $this->player1 = $player1;
         $this->player2 = $player2;
     }
+
     
     function Flips(): string // подбрасывание монет, путем рандома
     {
@@ -66,12 +67,14 @@ class Game
 
             if ($this->player1->Bankrupt() || $this->player2->Bankrupt())
             {
-                return $this->GameOver();
+                return $this->flips;
             }
 
             $this->flips++;
 
         }
     }
+
+    
  
 }

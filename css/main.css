@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+h2{
+    color: gray;
+}
+h3{
+    color: gray;
+}
+h4{
+    color: gray;
+}
+span{
+    color: gold;
+}
+button{
+    background-color: gray;
+    width: 150px;
+    height: 50px;
+    border-radius: 12.5px;
+    color: white;
+    border-color: black;
+}
