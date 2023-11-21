@@ -10,4 +10,18 @@ $game = new Game //создание игры
     new Player("Игрок2",100)
 );
 
-$game->Start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heads_and_tails</title>
+</head>
+<body>
+
+<h2>Поздравляю <?php $game->Winner()->name?></h2>
+    
+</body>
+</html>
