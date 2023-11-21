@@ -4,10 +4,10 @@ use App\Player;
 
 require_once(dirname(__FILE__) ."/.//vendor/autoload.php");
 
-$game = new Game
+$game = new Game //создание игры
 (
-    new Player("Владимир", 100),
-    new Player("Полина",100)
+    new Player("Игрок1", 100),
+    new Player("Игрок2",100)
 );
 
 $game->Start();

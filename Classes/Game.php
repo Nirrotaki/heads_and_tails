@@ -15,12 +15,12 @@ class Game
         $this->player2 = $player2;
     }
     
-    function Flips(): string
+    function Flips(): string // подбрасывание монет, путем рандома
     {
         return rand(0,1) ? "Орел" : "Решка";
     }
 
-    function Winner(): Player
+    function Winner(): Player // возвращает победителя
     {
         if($this->player1->Bank() > $this->player2->Bank())
         {

@@ -13,18 +13,18 @@ class Player
         $this->coins = $coins;
     }
 
-    function Bank()
+    function Bank() // сумма всех монет
     {
         return $this->coins;
     }
 
-    function Point($player)
+    function Point($player) // добавление и отнимание монет
     {
         $this->coins++;
         $player->coins--;
     }
 
-    function Bankrupt()
+    function Bankrupt() // возвращает true когда монет - нет
     {
         return $this->coins == 0;
     }
