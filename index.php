@@ -42,6 +42,7 @@ if(isset($_POST["refresh"]))
 <form action="refresh" method="POST">
     <button>Сыграть</button>
 </form>
+
     
 </body>
 </html>
