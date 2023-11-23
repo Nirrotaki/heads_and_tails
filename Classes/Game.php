@@ -7,7 +7,7 @@ class Game
 {
     public object $player1;
     public object $player2;
-    protected int $flips = 0;
+    public int $flips = 0;
     
     function __construct(Player $player1, Player $player2)
     {
