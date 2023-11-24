@@ -10,4 +10,5 @@
 3. mysqli;
 4. php;
 5. ООП;
-6. SOLID.
+6. Composer (autoload);
+7. SOLID.
